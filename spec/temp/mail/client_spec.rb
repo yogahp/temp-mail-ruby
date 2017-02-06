@@ -1,7 +1,6 @@
 require 'spec_helper'
 require 'net/smtp'
 require 'gmail'
-require 'pry'
 
 describe Temp::Mail::Client do
   context 'get available domains' do

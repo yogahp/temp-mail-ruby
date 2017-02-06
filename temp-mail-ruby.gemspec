@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'temp/mail/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'temp-mail'
+  spec.name          = 'temp-mail-ruby'
   spec.version       = Temp::Mail::VERSION
-  spec.authors       = ['Maxim Dobryakov']
-  spec.email         = ['maxim.dobryakov@gmail.com']
-  spec.summary       = %q{Client to temp-mail.ru API.}
-  spec.description   = %q{Ruby client to temp-mail.ru API}
-  spec.homepage      = 'https://github.com/maxd/temp-mail'
+  spec.authors       = ['Maxim Dobryakov', ' Yoga Hapriana']
+  spec.email         = ['maxim.dobryakov@gmail.com', 'thenelse@rocketmail.com']
+  spec.summary       = %q{Client to temp-mail.org API.}
+  spec.description   = %q{Ruby client to temp-mail.org API}
+  spec.homepage      = 'https://github.com/yogahp/temp-mail-ruby'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -22,5 +22,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.2'
   spec.add_development_dependency 'gmail', '~> 0.6.0'
-  spec.add_development_dependency 'pry'
 end
