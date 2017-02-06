@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/maxd/temp-mail.svg?branch=master)](https://travis-ci.org/maxd/temp-mail)
+[![Build Status](https://travis-ci.org/yogahp/temp-mail-ruby.svg?branch=master)](https://travis-ci.org/yogahp/temp-mail-ruby)
 
-# temp-mail
+# temp-mail-ruby
 
-Ruby client for temp-mail.ru
+Ruby client for [TempMail](https://temp-mail.org)
 
 ## Usage
 
@@ -21,14 +21,14 @@ p client.available_domains
 require 'temp/mail'
 
 client = Temp::Mail::Client.new
-p client.incoming_emails('monkey9000@flurred.com')
+p client.incoming_emails('buburgoreng@vps30.com')
 ```
 
-[Here](http://api.temp-mail.ru/) is Temp Mail API specification. It describe all fields of e-mail objects in incoming list.
+[Here](https://temp-mail.org/en/api/) is Temp Mail API specification. It describe all fields of e-mail objects in incoming list.
 
 ## Contributing
 
-1. Fork it ( https://github.com/maxd/temp-mail/fork )
+1. Fork it ( https://github.com/yogahp/temp-mail-ruby/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
