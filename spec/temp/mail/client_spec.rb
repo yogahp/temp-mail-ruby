@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'net/smtp'
 require 'gmail'
+require 'pry'
 
 describe Temp::Mail::Client do
   context 'get available domains' do
@@ -21,7 +22,7 @@ describe Temp::Mail::Client do
     let(:message_subject) { 'test message' }
     let(:message) { 'This is a test message.' }
     let(:from_email) { 'tempmail.gem@gmail.com' }
-    let(:to_email) { "test#{described_class.new.available_domains[0]}" }
+    let(:to_email) { email = described_class.new.available_domains; "test#{email[rand(0..email.count - 1)]}" }
     let(:user_name) { from_email }
     let(:password) { 'd3liv3rusfr0m3v1l' }    
 
@@ -31,6 +32,7 @@ describe Temp::Mail::Client do
       email.to = to_email
       email.subject = message_subject
       email.body = message
+      email.deliver!
       email.deliver!
       gmail.logout
       sleep 2
