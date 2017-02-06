@@ -3,6 +3,7 @@
 # temp-mail-ruby
 
 Ruby client for [TempMail](https://temp-mail.org)
+
 Original version : [temp-mail](https://github.com/maxd/temp-mail)
 
 ## Usage
